@@ -65,7 +65,7 @@ const Query = {
     },
     getPermission: (_, { role }, { }) => {
         try {
-            console.log('--checking getKeyValue function----', getKeyValue);
+            console.log('--checking getKeyValue function----', role, getKeyValue);
             const result = getKeyValue(role);
             console.log('result isg---', result);
             
