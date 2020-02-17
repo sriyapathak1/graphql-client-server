@@ -1,0 +1,36 @@
+type Users {
+    message: String,
+    status:Int,
+    data:[MockDdata],
+ }
+ type MockDdata {
+    trainee: String,
+    reviewer: String,
+    id: Int,
+ }
+ type Role {
+    message: String,
+    status:Int,
+    Roledata:[MockEmailRole],
+ }
+type MockEmailRole {
+    email: String,
+    role: String,
+}
+type MatchRole {
+    message: String,
+    status:Int,
+    RoleMatch:[RoleType],
+ }
+ type RoleType {
+   email: String,
+   role: String,
+ }
+ type MatchPermission {
+    message: String,
+    status:Int,
+    accessRole:[PermissionType],
+ }
+ type PermissionType {
+   role: String,
+ }

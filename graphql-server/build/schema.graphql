@@ -1,0 +1,8 @@
+
+
+type Query {
+ getUser: Users,
+ getUserRole(email: String, role: String,) : Role,
+ getRole(email: String, role: String,) : MatchRole,
+ getPermission(role: String): MatchPermission,
+}

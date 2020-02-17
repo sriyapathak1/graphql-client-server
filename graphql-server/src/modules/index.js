@@ -1,0 +1,1 @@
+export {Query as UserQuery, Mutation as UserMutation } from './user';
